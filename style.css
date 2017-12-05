@@ -1,3 +1,8 @@
+body{
+    font-family: "Avenir Next";
+    background-color: lightsteelblue;
+    color: steelblue ;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -5,11 +10,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid steelblue;
     text-align: left;
     padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
 }

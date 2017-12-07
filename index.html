@@ -19,21 +19,21 @@ Grade Calculator
     </tr>
     <tr>
         <td>Homework</td>
-        <td><input type="number" id="hw" size="20">
-        <td><input type="number" id="hwweight" size="20">
+        <td><input id="hw" size="20" value="70,80,90">
+        <td><input type="number" id="hwweight" value=25 size="20">
     </tr>
     <tr>
         <td>Classwork</td>
-        <td><input type="number" id="cw" size="20">
-        <td><input type="number" id="cwweight" size="20">
+        <td><input  id="cw" size="20" value="70,80,90">
+        <td><input type="number" id="cwweight" value=25 size="20">
     </tr>
     <tr>
         <td>Tests and Quizes</td>
-        <td><input type="number" id="tq" size="20">
-        <td><input type="number" id="tqweight" size="20">
+        <td><input id="tq" size="20" value="70,80,90">
+        <td><input type="number" id="tqweight" value=35 size="20">
     </tr>
 </table>
-<button>Calculate final grade</button>
+<button onclick="calculateCurrentGrade()">Calculate final grade</button>
 <br>
 <br>
 <br>
@@ -46,10 +46,10 @@ Grade Calculator
     <tr>
         <td>Final</td>
         <td><input type="number" id="finalgrade" size="20">
-        <td><input type="number" id="finalweight" size="20">
+        <td><input type="number" id="finalweight" value=15 size="20">
     </tr>
 </table>
-
-<button>Calculate what you need on the Final</button>
+<!--<select id="difficulty" onchange="startGame(this.value)">-->
+<!--<button onclick="calculateGradeNeeded()"> Calculate what you need on the Final </button>-->
 </body>
 </html>

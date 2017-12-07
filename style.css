@@ -1,7 +1,7 @@
 body{
     font-family: "Avenir Next";
-    background-color: lightsteelblue;
-    color: steelblue ;
+    background-color: darkcyan;
+    color: lightcyan ;
 }
 table {
     font-family: arial, sans-serif;
@@ -10,7 +10,7 @@ table {
 }
 
 td, th {
-    border: 1px solid steelblue;
+    border: 1px solid white;
     text-align: left;
     padding: 8px;
 }

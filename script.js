@@ -25,13 +25,15 @@ function calculateCurrentGrade(){
    console.log(totalPoints);
    var finalGrade= (totalPoints/finalWeight)*100;
     console.log(finalGrade);
-    document.getElementById("finalGrade").innerHTML=finalGrade;
-    return "you have a" + finalGrade + "%";
+   return document.getElementById("finalGrade").innerHTML = "Your Current Grade Is: "+ finalGrade + "%";
 
     // var classworkArray = convertArrayStringToNumber(classwork);
     // var classworkAvg = averageArray(classworkArray);
 
     // → takes data from page, calls on sub-functions to calculate the student grade and output it back to page.  Also “return” the result so that calculateGradeNeeded() can use it.
+}
+function CurrentGradeCalculator(){
+    document.getElementById("finalGrade").innerHTML = "Your Current Grade Is: " + calculateCurrentGrade();
 }
 
 function convertArrayStringToNumber(string) {
@@ -60,8 +62,17 @@ function convertArrayStringToNumber(string) {
   }
 
 
-function calculateGradeNeeded(calculateCurrentGrade){
-// calculateCurrentGrade
+function calculateGradeNeeded(){
+    var gradeWanted =parseInt(document.getElementById("finalgrade").value);
+    console.log(gradeWanted);
+    var gradeWeight =parseInt(document.getElementById("finalweight").value);
+    var finalGrade = calculateCurrentGrade();
+    console.log(gradeWeight);
+    var final= gradeWanted - (100% - gradeWeight)* finalGrade;
+    console.log(final);
+console.log(finalGrade);
+    document.getElementById("neededOnFinal").innerHTML="you need a " + final + "%";
+
     // → takes the current grade returned by calculateCurrentGrade() and the grade desired and does the math to determine what the user needs on the final.
 }
 

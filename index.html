@@ -16,7 +16,7 @@ Grade Calculator
     <tr>
         <th></th>
         <th>Grades</th>
-        <th>Weight</th>
+        <th>Weight % </th>
     </tr>
     <tr>
         <td>Homework</td>
@@ -43,16 +43,17 @@ Grade Calculator
         <th></th>
         <div id="finalGrade"></div>
         <th>Total Grade Wanted</th>
-        <th>Weight</th>
+        <th>Weight % </th>
     </tr>
     <tr>
         <td>Final</td>
-        <td><input type="number" id="finalgrade" size="20">
-        <td><input type="number" id="finalweight" value=15 size="20">
+        <td><input type="number" id="finalgrade" value="90" size="20">
+        <td><input type="number" id="finalweight" value="15" value=15 size="20">
     </tr>
+
 </table>
-<!--<select id="difficulty" onchange="startGame(this.value)">-->
-<!--<button onclick="calculateGradeNeeded()"> Calculate what you need on the Final </button>-->
+<div id="neededOnFinal"></div>
+<button onclick="calculateGradeNeeded()"> Calculate what you need on the Final </button>
 
 </body>
 </html>

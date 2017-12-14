@@ -27,14 +27,8 @@ function calculateCurrentGrade(){
     console.log(finalGrade);
    return document.getElementById("finalGrade").innerHTML = finalGrade;
 
-    // var classworkArray = convertArrayStringToNumber(classwork);
-    // var classworkAvg = averageArray(classworkArray);
 
-    // → takes data from page, calls on sub-functions to calculate the student grade and output it back to page.  Also “return” the result so that calculateGradeNeeded() can use it.
 }
-// function CurrentGradeCalculator(){
-//     document.getElementById("finalGrade").innerHTML = "Your Current Grade Is: " + calculateCurrentGrade();
-// }
 
 function convertArrayStringToNumber(string) {
     var array = string.split(",");
@@ -43,9 +37,7 @@ function convertArrayStringToNumber(string) {
     }
     return array;
 
-    // takes an array of strings (from page) and returns the same array, except all the items are numbers.
-// Use string.split(“,”)  to convert a string into an array of strings, then iterate through and convert each item in the array into a number like:
-//     array[i] = parseInt(array[i])
+
 }
   function averageArray(array) {
       console.log(array);
@@ -58,7 +50,7 @@ function convertArrayStringToNumber(string) {
       }
       return average;
 
-      // → takes an array of numbers and returns the average of those numbers
+
   }
 
 
@@ -70,12 +62,6 @@ function calculateGradeNeeded(){
      var currentGrade=parseInt(document.getElementById("currentGrade").value);
     var final=100*(gradeWanted + (gradeWeight-currentGrade))/gradeWeight;
     return document.getElementById("neededOnFinal").innerHTML = final;
-        // gradeWeight × Exam Score + (100% − Exam Worth) × Current Grade
-//     console.log(gradeWanted);
-//     console.log(final);
-// console.log(finalGrade);
-//     document.getElementById("neededOnFinal").innerHTML= final ;
-//      var gradeNeededFinal = currentGrade - currentGrade*gradeWeight/100
-    // → takes the current grade returned by calculateCurrentGrade() and the grade desired and does the math to determine what the user needs on the final.
+
 }
 

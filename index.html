@@ -7,7 +7,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css"/>
 </head>
-Grade Calculator
+<h1> Grade Calculator </h1>
 <br>
 <br>
 <body>
@@ -34,6 +34,11 @@ Grade Calculator
         <td><input type="number" id="tqweight" value=35 size="20">
     </tr>
 </table>
+<br>
+<br>
+<div id="finalGrade"></div>
+<br>
+<br>
 <button onclick="calculateCurrentGrade()">Calculate final grade</button>
 <br>
 <br>
@@ -41,8 +46,7 @@ Grade Calculator
 <table style="width:100%">
     <tr>
         <th></th>
-        <h1> Your Current Grade Is: </h1>
-        <div id="finalGrade"></div>
+
         <th>Current Grade</th>
         <th>Total Grade Wanted</th>
         <th>Weight % </th>
@@ -55,9 +59,12 @@ Grade Calculator
     </tr>
 
 </table>
-
-<h1>"You Need A: "</h1>
+<br>
+<br>
 <div id="neededOnFinal"></div>
+<br>
+<br>
+
 <button onclick="calculateGradeNeeded()"> Calculate what you need on the Final </button>
 
 </body>

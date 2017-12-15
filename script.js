@@ -1,5 +1,6 @@
 
 function calculateCurrentGrade(){
+
     console.log("hi my nae is");
     var homework = document.getElementById("hw").value;
     console.log(homework);
@@ -12,7 +13,6 @@ function calculateCurrentGrade(){
     var hwAverage = averageArray(convertArrayStringToNumber(homework));
     var cwAverage=averageArray(convertArrayStringToNumber(classwork));
     var tqAverage=averageArray(convertArrayStringToNumber(tq));
-
    var finalHw= (hwAverage * (homeworkWeight/100));
    console.log(finalHw);
    var finalCw=(cwAverage * (classworkWeight/100));
@@ -25,7 +25,8 @@ function calculateCurrentGrade(){
    console.log(totalPoints);
    var finalGrade= (totalPoints/finalWeight)*100;
     console.log(finalGrade);
-   return document.getElementById("finalGrade").innerHTML = finalGrade;
+   ;
+   return document.getElementById("finalGrade").innerHTML = "You Currently Have A " +  Math.round(finalGrade) + "%";
 
 
 }
@@ -61,7 +62,7 @@ function calculateGradeNeeded(){
 //     console.log(gradeWeight);
      var currentGrade=parseInt(document.getElementById("currentGrade").value);
     var final=100*(gradeWanted + (gradeWeight-currentGrade))/gradeWeight;
-    return document.getElementById("neededOnFinal").innerHTML = final;
-
+    Math.round(final);
+    return document.getElementById("neededOnFinal").innerHTML = "You Need A " +  Math.round(final) + "% On The Final In Order To Get A " + gradeWanted + "%"
 }
 
